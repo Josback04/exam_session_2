@@ -7,7 +7,7 @@ class Product {
   final String createdDate;
   final String deliveryTimeSpan;
   final String productImageUrl;
-  final String category;
+  final int categoryId;
   final String categoryName;
 
   Product({
@@ -19,7 +19,7 @@ class Product {
     required this.createdDate,
     required this.deliveryTimeSpan,
     required this.productImageUrl,
-    required this.category,
+    required this.categoryId,
     required this.categoryName,
   });
 
@@ -33,7 +33,7 @@ class Product {
       createdDate: json['createdDate'],
       deliveryTimeSpan: json['deliveryTimeSpan'],
       productImageUrl: json['productImageUrl'],
-      category: json['category'],
+      categoryId: json['categoryId'],
       categoryName: json['categoryName'],
     );
   }
